@@ -136,6 +136,7 @@ end
 # trouble! light check logic
 def self.trouble
 	until @light_check
+		GFX.clear_screen
 		Repo.ask_user("It is pitch black.", "What would you like to do?\n")
 		option3 = gets.chomp.downcase
 		case Repo.lightswitch(option3)
