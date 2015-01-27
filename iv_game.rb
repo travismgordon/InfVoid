@@ -10,9 +10,8 @@ start = gets		# => user start
 
 # welcome/commander name check
 GFX.clear_screen
-GFX.welcome_cmdr	# => welcome graphic
+user_name = GFX.welcome_cmdr	# => Assign name of commander
 Text.introduction	# => introductiom text
-Repo.cmdr_name		# => assign commander name
 
 start0 = gets		# input check place holder (assign cmdr name)
 
